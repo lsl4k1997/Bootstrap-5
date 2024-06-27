@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='refresh' content='10'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Alertas, Badges e Listas</title>
+
+</head>
+<body>
+    <div class="container py-5">
+        <div class="alert alert-danger alert-dismissible fade show">
+            <h4 class="alert-heading"><i class="bi-info-circle"></i> Informação</h4>
+            <p>Isso é uma alerta Simples.</p>
+            <button class="btn-close" data-bs-dismiss="alert"></button>
+            <a href="#" class="alert-link">Clique aqui.</a>
+        </div>
+        <hr>
+        <h2>
+            Exemplo de texto em cápsula
+            <span class="badge bg-secondary">Novo</span>
+        </h2>
+        <button class="btn btn-primary btn-lg position-relative">
+            <span class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">5</span>
+            Notificações
+        </button>
+        <hr>
+        <div class="list-group">
+            <div class="list-group-item active">Item 1</div>
+            <div class="list-group-item">Item 2</div>
+            <div class="list-group-item">Item 3</div>
+            <div class="list-group-item">Item 4</div>
+            <div class="list-group-item disabled">Item 5</div>
+        </div>
+        <hr>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Título da Notícia</h5>
+                    <small id="horariopassado">5 dias atrás</small>
+                </div>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus earum voluptas cupiditate est. Reiciendis saepe quisquam nam, possimus facilis culpa corrupti et delectus animi ratione odio aliquid eligendi sint a!</p>
+            </a>
+        </div>
+        </div>
+        <script>
+            var date = new Date();
+            document.getElementById("horariopassado").innerHTML = date;
+        </script>
+       
+</body>
+</html>
